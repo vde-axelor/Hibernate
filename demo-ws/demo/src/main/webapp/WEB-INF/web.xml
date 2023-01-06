@@ -1,0 +1,68 @@
+<web-app>  
+  
+<servlet>  
+<servlet-name>FirstServlet</servlet-name>  
+<servlet-class>FirstServlet</servlet-class>  
+</servlet>
+<servlet>
+	<description>
+	</description>
+	<display-name>tst</display-name>
+	<servlet-name>tst</servlet-name>
+	<servlet-class>com.unique.apps.tst</servlet-class>
+</servlet>
+<servlet>
+	<description>
+	</description>
+	<display-name>dbStore</display-name>
+	<servlet-name>dbStore</servlet-name>
+	<servlet-class>com.unique.apps.dbStore</servlet-class>
+</servlet>
+<servlet>
+	<description>
+	</description>
+	<display-name>test</display-name>
+	<servlet-name>test</servlet-name>
+	<servlet-class>com.test.test</servlet-class>
+</servlet>
+<servlet>
+	<description>
+	</description>
+	<display-name>delete</display-name>
+	<servlet-name>delete</servlet-name>
+	<servlet-class>com.test.delete</servlet-class>
+</servlet>
+<servlet>
+	<description>
+	</description>
+	<display-name>update</display-name>
+	<servlet-name>update</servlet-name>
+	<servlet-class>com.test.update</servlet-class>
+</servlet>  
+  
+<servlet-mapping>  
+<servlet-name>FirstServlet</servlet-name>  
+<url-pattern>/FirstServlet</url-pattern>  
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>tst</servlet-name>
+	<url-pattern>/tst</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>dbStore</servlet-name>
+	<url-pattern>/dbStore</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>test</servlet-name>
+	<url-pattern>/test</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>delete</servlet-name>
+	<url-pattern>/delete</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>update</servlet-name>
+	<url-pattern>/update</url-pattern>
+</servlet-mapping>  
+  
+</web-app>  
