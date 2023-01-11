@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+   
+   <servlet>
+   <servlet-name>test</servlet-name>
+   <jsp-file>/test.jsp</jsp-file>
+</servlet>
+<servlet-mapping>
+  <servlet-name>test</servlet-name>
+  <url-pattern>/test.jsp</url-pattern>
+</servlet-mapping>
+
+  <servlet>
+        <servlet-name>Demo</servlet-name>
+        <servlet-class>com.unique.app.main.Demo</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Demo</servlet-name>
+        <url-pattern>/Demo</url-pattern>
+    </servlet-mapping>
+</web-app>

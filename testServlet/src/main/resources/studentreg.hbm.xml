@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-mapping>
+	<class name="com.unique.app.main.Student" table="registration">
+		<meta attribute="class-description"> This class contains the student detail. </meta>
+		<id name="id" type="int" column="id" />
+		<property name="name" column="name" type="string" />
+		<property name="username" column="username" type="string" />
+		<property name="password" column="password" type="string" />
+	</class>
+</hibernate-mapping>
