@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+
+ <servlet>
+        <servlet-name>mainServlet</servlet-name>
+        <servlet-class>com.unique.app.mainServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>mainServlet</servlet-name>
+        <url-pattern>/mainServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>editServlet</servlet-name>
+        <servlet-class>com.unique.app.editServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>editServlet</servlet-name>
+        <url-pattern>/editServlet</url-pattern>
+    </servlet-mapping>
+
+<servlet>
+   <servlet-name>test</servlet-name>
+   <jsp-file>/test.jsp</jsp-file>
+</servlet>
+<servlet-mapping>
+  <servlet-name>test</servlet-name>
+  <url-pattern>/test.jsp</url-pattern>
+</servlet-mapping>
+
+<servlet>
+   <servlet-name>delete</servlet-name>
+   <jsp-file>/delete.jsp</jsp-file>
+</servlet>
+<servlet-mapping>
+  <servlet-name>delete</servlet-name>
+  <url-pattern>/delete.jsp</url-pattern>
+</servlet-mapping>
+
+</web-app>
