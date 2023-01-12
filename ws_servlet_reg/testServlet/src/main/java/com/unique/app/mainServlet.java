@@ -44,6 +44,7 @@ public class mainServlet extends HttpServlet{
 			t.setPassword(password);
 			
 			em.persist(t);
+			em.remove(t);
 			
 			em.getTransaction().commit();
 			
