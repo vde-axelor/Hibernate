@@ -20,6 +20,15 @@
     </servlet-mapping>
     
     <servlet>
+        <servlet-name>displayServlet</servlet-name>
+        <servlet-class>com.unique.app.displayServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>displayServlet</servlet-name>
+        <url-pattern>/displayServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
         <servlet-name>deleteServlet</servlet-name>
         <servlet-class>com.unique.app.deleteServlet</servlet-class>
     </servlet>
@@ -35,6 +44,15 @@
 <servlet-mapping>
   <servlet-name>test</servlet-name>
   <url-pattern>/test.jsp</url-pattern>
+</servlet-mapping>
+
+<servlet>
+   <servlet-name>update</servlet-name>
+   <jsp-file>/update.jsp</jsp-file>
+</servlet>
+<servlet-mapping>
+  <servlet-name>update</servlet-name>
+  <url-pattern>/update.jsp</url-pattern>
 </servlet-mapping>
 
 <servlet>

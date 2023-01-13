@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body align="center">
-<form action="deleteServlet" method="get">
+<form action="displayServlet" method="get">
 <input type="text" name="id" placeholder="Enter id"><br>
 <input type="submit" name="submit">
 </form>

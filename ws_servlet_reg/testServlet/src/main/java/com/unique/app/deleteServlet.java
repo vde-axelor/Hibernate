@@ -12,6 +12,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import net.bytebuddy.implementation.bytecode.constant.IntegerConstant;
+
 @WebServlet(urlPatterns = ("/md"))
 public class deleteServlet extends HttpServlet {
 
@@ -27,7 +29,9 @@ public class deleteServlet extends HttpServlet {
 		EntityManager em = emf.createEntityManager();
 		em.getTransaction().begin();
 
-		test t = em.find(test.class, 26);
+		String id=req.getParameter("id");
+		int id1=Integer.parseInt(id);
+		test t = em.find(test.class, id1);
 		em.remove(t);
 		em.getTransaction().commit();
 		emf.close();

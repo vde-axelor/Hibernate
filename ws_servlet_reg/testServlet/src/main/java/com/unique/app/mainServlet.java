@@ -44,7 +44,12 @@ public class mainServlet extends HttpServlet{
 			t.setPassword(password);
 			
 			em.persist(t);
-			em.remove(t);
+			t.getName();
+			t.getCountry();
+			t.getEmail();
+			t.getUsername();
+			t.getPassword();
+			//em.remove(t);
 			
 			em.getTransaction().commit();
 			

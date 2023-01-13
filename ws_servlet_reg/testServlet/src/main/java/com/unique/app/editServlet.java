@@ -19,8 +19,11 @@ import com.unique.app.mainServlet;
 public class editServlet extends HttpServlet{
 
 	private static final long serialVersionUID = 1L;
-	
 	protected void doGet(HttpServletRequest req,HttpServletResponse res)throws IOException,ServletException{
+		doPost(req,res);
+	}
+	
+	protected void doPost(HttpServletRequest req,HttpServletResponse res)throws IOException,ServletException{
 		PrintWriter pw=res.getWriter();
     	EntityManagerFactory emf=Persistence.createEntityManagerFactory("test");
 		EntityManager em=emf.createEntityManager();
@@ -35,8 +38,7 @@ public class editServlet extends HttpServlet{
 		String password=req.getParameter("password");
 			
 
-		test t=new test();
-		t.getId();
+		test t = em.find(test.class, id1);
 		t.setName(name);
 		t.setCountry(country);
 		t.setEmail(email);
@@ -105,7 +107,7 @@ public class editServlet extends HttpServlet{
 //		em.close();
 //		emf.close();
 		
-		pw.print("Delete Successfully...");
+		pw.print("Update Successfully...");
 	}
 
 }
