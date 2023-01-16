@@ -19,25 +19,25 @@ public class crudOpt extends HttpServlet{
 	
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("test");
 		EntityManager em = emf.createEntityManager();
-//		String id=req.getParameter("id");
-//		int id1=Integer.parseInt(id);
-//		test t3 = em.find(test.class, id1);
-//		Methods m3=new Methods();
-//		m3.deletestudent(t3);
-//		em.remove(m3);
-//		
-//        PrintWriter pw=res.getWriter();
-//        pw.print("Hello");
-//        System.out.println("Hello");
+		String id=req.getParameter("id");
+		int id1=Integer.parseInt(id);
+		test t3 = em.find(test.class, id1);
+		Methods m3=new Methods();
+		m3.deletestudent(t3);
+		em.remove(m3);
+		
+        PrintWriter pw=res.getWriter();
+        pw.print("Hello");
+        System.out.println("Hello");
 		
 		
 		
 //		PrintWriter pw=res.getWriter();
-//		String id11=req.getParameter("id");
-//		int id2=Integer.parseInt(id11);
-//		test t = em.find(test.class, id11);
-//		Methods m4=new Methods();
-//		m4.displaystudent(t);
+		String id11=req.getParameter("id");
+		int id2=Integer.parseInt(id11);
+		test t = em.find(test.class, id11);
+		Methods m4=new Methods();
+		m4.displaystudent(t);
     }
     protected void doPost(HttpServletRequest req,HttpServletResponse res)throws ServletException,IOException{
         //doGet(req,res);
