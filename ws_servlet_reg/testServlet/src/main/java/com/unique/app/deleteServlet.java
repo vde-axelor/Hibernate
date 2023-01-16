@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import net.bytebuddy.implementation.bytecode.constant.IntegerConstant;
+
 
 @WebServlet(urlPatterns = ("/md"))
 public class deleteServlet extends HttpServlet {

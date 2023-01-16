@@ -1,6 +1,6 @@
 package com.unique.app;
 
-import java.io.PrintWriter;
+//import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,13 +22,13 @@ public class Methods {
 		String password=t.getPassword();
 				
 		test t1=new test();
-		t.setName(name);
-		t.setCountry(country);
-		t.setEmail(email);
-		t.setUsername(username);
-		t.setPassword(password);
+		t1.setName(name);
+		t1.setCountry(country);
+		t1.setEmail(email);
+		t1.setUsername(username);
+		t1.setPassword(password);
 		
-		em.persist(t);
+		em.persist(t1);
 		//em.remove(t);
 		
 		em.getTransaction().commit();

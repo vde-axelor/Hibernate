@@ -2,9 +2,9 @@ package com.unique.app;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.List;
+//import java.util.List;
 
-import javax.management.Query;
+
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
@@ -13,7 +13,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import com.unique.app.mainServlet;
+//import com.unique.app.mainServlet;
 
 @WebServlet(urlPatterns = ("/me"))
 public class editServlet extends HttpServlet{

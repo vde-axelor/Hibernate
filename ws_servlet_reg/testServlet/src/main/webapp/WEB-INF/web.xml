@@ -1,67 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app>
 
- <servlet>
-        <servlet-name>mainServlet</servlet-name>
-        <servlet-class>com.unique.app.mainServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>mainServlet</servlet-name>
-        <url-pattern>/mainServlet</url-pattern>
-    </servlet-mapping>
-    
-    <servlet>
-        <servlet-name>editServlet</servlet-name>
-        <servlet-class>com.unique.app.editServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>editServlet</servlet-name>
-        <url-pattern>/editServlet</url-pattern>
-    </servlet-mapping>
-    
-    <servlet>
-        <servlet-name>displayServlet</servlet-name>
-        <servlet-class>com.unique.app.displayServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>displayServlet</servlet-name>
-        <url-pattern>/displayServlet</url-pattern>
-    </servlet-mapping>
-    
-    <servlet>
-        <servlet-name>deleteServlet</servlet-name>
-        <servlet-class>com.unique.app.deleteServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>deleteServlet</servlet-name>
-        <url-pattern>/deleteServlet</url-pattern>
-    </servlet-mapping>
+	<servlet>
+		<servlet-name>mainServlet</servlet-name>
+		<servlet-class>com.unique.app.mainServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>mainServlet</servlet-name>
+		<url-pattern>/mainServlet</url-pattern>
+	</servlet-mapping>
 
-<servlet>
-   <servlet-name>test</servlet-name>
-   <jsp-file>/test.jsp</jsp-file>
-</servlet>
-<servlet-mapping>
-  <servlet-name>test</servlet-name>
-  <url-pattern>/test.jsp</url-pattern>
-</servlet-mapping>
+	<servlet>
+		<servlet-name>crudOpt</servlet-name>
+		<servlet-class>com.unique.app.crudOpt</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>crudOpt</servlet-name>
+		<url-pattern>/crudOpt</url-pattern>
+	</servlet-mapping>
 
-<servlet>
-   <servlet-name>update</servlet-name>
-   <jsp-file>/update.jsp</jsp-file>
-</servlet>
-<servlet-mapping>
-  <servlet-name>update</servlet-name>
-  <url-pattern>/update.jsp</url-pattern>
-</servlet-mapping>
+	<servlet>
+		<servlet-name>editServlet</servlet-name>
+		<servlet-class>com.unique.app.editServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>editServlet</servlet-name>
+		<url-pattern>/editServlet</url-pattern>
+	</servlet-mapping>
 
-<servlet>
-   <servlet-name>delete</servlet-name>
-   <jsp-file>/delete.jsp</jsp-file>
-</servlet>
-<servlet-mapping>
-  <servlet-name>delete</servlet-name>
-  <url-pattern>/delete.jsp</url-pattern>
-</servlet-mapping>
+	<servlet>
+		<servlet-name>displayServlet</servlet-name>
+		<servlet-class>com.unique.app.displayServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>displayServlet</servlet-name>
+		<url-pattern>/displayServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>deleteServlet</servlet-name>
+		<servlet-class>com.unique.app.deleteServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>deleteServlet</servlet-name>
+		<url-pattern>/deleteServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>opt</servlet-name>
+		<jsp-file>/opt.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>opt</servlet-name>
+		<url-pattern>/opt.jsp</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>test</servlet-name>
+		<jsp-file>/test.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>test</servlet-name>
+		<url-pattern>/test.jsp</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>update</servlet-name>
+		<jsp-file>/update.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>update</servlet-name>
+		<url-pattern>/update.jsp</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>delete</servlet-name>
+		<jsp-file>/delete.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>delete</servlet-name>
+		<url-pattern>/delete.jsp</url-pattern>
+	</servlet-mapping>
 
 </web-app>

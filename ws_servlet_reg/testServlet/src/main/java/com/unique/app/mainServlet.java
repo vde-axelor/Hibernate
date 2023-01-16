@@ -19,28 +19,28 @@ public class mainServlet extends HttpServlet{
 	protected void doGet(HttpServletRequest req,HttpServletResponse res)throws ServletException, IOException
 	    {
 		
-			EntityManagerFactory emf = Persistence.createEntityManagerFactory("test");
-			EntityManager em = emf.createEntityManager();
-			PrintWriter pw=res.getWriter();
-			String id=req.getParameter("id");
-			int id1=Integer.parseInt(id);
-			test t3 = em.find(test.class, id1);
-			Methods m3=new Methods();
-			m3.deletestudent(t3);
-			em.remove(m3);
-			
-//	        PrintWriter pw=res.getWriter();
-	        pw.print("Hello");
-	        System.out.println("Hello");
-			
-			
-			
+//			EntityManagerFactory emf = Persistence.createEntityManagerFactory("test");
+//			EntityManager em = emf.createEntityManager();
 //			PrintWriter pw=res.getWriter();
-			String id11=req.getParameter("id");
-			int id2=Integer.parseInt(id11);
-			test t = em.find(test.class, id11);
-			Methods m4=new Methods();
-			m4.displaystudent(t);
+//			String id=req.getParameter("id");
+//			int id1=Integer.parseInt(id);
+//			test t3 = em.find(test.class, id1);
+//			Methods m3=new Methods();
+//			m3.deletestudent(t3);
+//			em.remove(m3);
+//			
+////	        PrintWriter pw=res.getWriter();
+//	        pw.print("Hello");
+//	        System.out.println("Hello");
+//			
+//			
+//			
+////			PrintWriter pw=res.getWriter();
+//			String id11=req.getParameter("id");
+//			int id2=Integer.parseInt(id11);
+//			test t = em.find(test.class, id11);
+//			Methods m4=new Methods();
+//			m4.displaystudent(t);
 	    }
 	    protected void doPost(HttpServletRequest req,HttpServletResponse res)throws ServletException,IOException{
 	        //doGet(req,res);
@@ -56,8 +56,8 @@ public class mainServlet extends HttpServlet{
 			t.setEmail(email);
 			t.setUsername(username);
 			t.setPassword(password);
-	    	Methods m=new Methods();
-	    	m.addstudent(t);
+//	    	Methods m=new Methods();
+//	    	m.addstudent(t);
 	    	pw.print("save sucressfully..");
 	    	
 	    	EntityManagerFactory emf=Persistence.createEntityManagerFactory("test");
@@ -75,8 +75,8 @@ public class mainServlet extends HttpServlet{
 			t1.setEmail(email1);
 			t1.setUsername(username1);
 			t1.setPassword(password1);
-	    	Methods m1=new Methods();
-	    	m1.editstudent(t1);
+//	    	Methods m1=new Methods();
+//	    	m1.editstudent(t1);
 	    	
 	    	pw.print("update succesfully..");
 //	    	EntityManagerFactory emf=Persistence.createEntityManagerFactory("test");
