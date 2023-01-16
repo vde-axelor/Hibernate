@@ -2,6 +2,8 @@ package com.unique.app;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -28,19 +30,28 @@ public class displayServlet extends HttpServlet {
 		String id=req.getParameter("id");
 		int id1=Integer.parseInt(id);
 		test t = em.find(test.class, id1);
-		pw.print("<html><body align='center'>");
-		pw.print("<table align='center'>");
-		pw.print("<tr>"+t.getName()+"</tr>");
-		pw.print("<br>");
-		pw.print("<tr>"+t.getCountry()+"</tr>");
-		pw.print("<br>");
-		pw.print("<tr>"+t.getEmail()+"</tr>");
-		pw.print("<br>");
-		pw.print("<tr>"+t.getUsername()+"</tr>");
-		pw.print("<br>");
-		pw.print("<tr>"+t.getPassword()+"</tr>");
-		pw.print("</table>");
-		pw.print("</body></html>");
+		
+		List<test> list=new ArrayList<test>();  
+		t.getId();
+		t.getName();
+		t.getCountry();
+		t.getEmail();
+		t.getUsername();
+		t.getPassword();
+		list.add(t);
+//		pw.print("<html><body align='center'>");
+//		pw.print("<table align='center'>");
+//		pw.print("<tr>"+t.getName()+"</tr>");
+//		pw.print("<br>");
+//		pw.print("<tr>"+t.getCountry()+"</tr>");
+//		pw.print("<br>");
+//		pw.print("<tr>"+t.getEmail()+"</tr>");
+//		pw.print("<br>");
+//		pw.print("<tr>"+t.getUsername()+"</tr>");
+//		pw.print("<br>");
+//		pw.print("<tr>"+t.getPassword()+"</tr>");
+//		pw.print("</table>");
+//		pw.print("</body></html>");
 		
 //		t.getName();
 //		t.getCountry();
